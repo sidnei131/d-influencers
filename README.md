@@ -57,8 +57,8 @@ Execute os testes automatizados
 $ docker exec -it d-influencers-api php artisan test
 ```
 
-Acesse a API em http://localhost/api.
-Acesse a interface para testar a API em http://localhost. (email: johndoe@mail.com / senha: @12345678)
+- Acesse a API em http://localhost/api.
+- Acesse a interface para testar a API em http://localhost. (email: johndoe@mail.com / senha: @12345678)
 
 
 ## 🛠️ Tecnologias Utilizadas
