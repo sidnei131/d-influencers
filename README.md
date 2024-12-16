@@ -29,29 +29,42 @@ Influencers: https://documenter.getpostman.com/view/3019903/2sAYHzGP5E
 ### 1. Clone o Repositório
 
 ```bash
-git clone https://github.com/sidnei131/d-influencers.git
-cd d-influencers
+$ git clone https://github.com/sidnei131/d-influencers.git
+$ cd d-influencers
 ```
 
-### 2. Executando o projeto com Docker
+### 2. Configuração do Ambiente
+```bash
+Copie o arquivo .env.example para .env
+$ cp .env.example .env
+```
+
+### 3. Executando o projeto com Docker
 
 ```bash
-# suba os containers
-docker compose up --build
+Suba os Containers
+$ docker compose up --build
 
-# execute as migrations
-docker exec -it d-influencers-api php artisan migrate --seed
+Gere a chave JWT
+$ docker exec -it d-influencers-api php artisan jwt:secret
 
-# execute os testes automatizados
-docker exec -it d-influencers-api php artisan test
+Execute as migrations
+$ docker exec -it d-influencers-api php artisan migrate --seed
+
+Execute os testes automatizados
+$ docker exec -it d-influencers-api php artisan test
 ```
 
-🛠️ Tecnologias Utilizadas
-Backend: Laravel 11
-Frontend: Vue.js 3 (Pinia, Bootstrap, Axios e Cypress)
-Servidor HTTP: Nginx com proxy reverso
-Banco de Dados: MySQL 8.1
-Autenticação: JWT
-Ambiente de Desenvolvimento: Docker, Docker Compose
+Acesse a API em http://localhost/api.
+Acesse a interface para testar a API em http://localhost.
+
+## 🛠️ Tecnologias Utilizadas
+
+- Backend: Laravel 11 
+- Frontend: Vue.js 3 (Pinia, Bootstrap, Axios e Cypress)
+- Servidor HTTP: Nginx com proxy reverso
+- Banco de Dados: MySQL 8.1
+- Autenticação: JWT
+- Ambiente de Desenvolvimento: Docker, Docker Compose
 
 
