@@ -45,7 +45,7 @@ $ cd ..
 
 ```bash
 Suba os Containers
-$ docker compose up --build
+$ docker compose up -d --build
 
 Gere a chave JWT
 $ docker exec -it d-influencers-api php artisan jwt:secret
