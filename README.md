@@ -45,6 +45,9 @@ $ cp .env.example .env
 Suba os Containers
 $ docker compose up --build
 
+Copie o .env.example para .env
+$ docker exec -it d-influencers-api cp .env.example .env
+
 Gere a chave JWT
 $ docker exec -it d-influencers-api php artisan jwt:secret
 
