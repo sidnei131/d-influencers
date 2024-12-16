@@ -34,16 +34,16 @@ $ cd d-influencers
 ### 2. Configuração do Ambiente
 
 ```bash
-Copie o arquivo .env.example para .env
+Copie os arquivos .env.example para .env
 $ cp .env.example .env
+$ cd api
+$ cp .env.example .env
+$ cd ..
 ```
 
 ### 3. Executando o projeto com Docker
 
 ```bash
-Copie o .env.example para .env do container
-$ docker exec -it d-influencers-api cp .env.example .env
-
 Suba os Containers
 $ docker compose up --build
 
